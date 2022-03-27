@@ -8,5 +8,5 @@ app.use("/", Routes);
 app.use("/public", express.static("./public"));
 
 app.listen(8000, () => {
-    console.log(`Server running on port 8080`)
+    console.log(`Server running on port 8000`)
 })
