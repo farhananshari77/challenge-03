@@ -11,9 +11,4 @@ router.post("/login", (req,res) => {
     res.redirect("/");
 });
 
-router.get("/cars", (req, res) => {
-	res.status(200);
-	res.render("cars", {title: "Cars"});
-});
-
 module.exports = router;

@@ -9,9 +9,23 @@
   .font-title{
     font-family: 'Helvetica'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 30px; color: #000000;
   }
-
+  .btn-add-car{
+    padding: 8px 8px; width: 142px; height: 36px; background: #0D28A6; border-radius: 2px; text-decoration: none;
+  }
+  .btn-category-all{
+    background: #CFD4ED; border: 1px solid #0D28A6; box-sizing: border-box; border-radius: 2px; text-decoration: none;
+  }
+  .btn-category{
+    background: #FFFFFF; border: 1px solid #AEB7E1; box-sizing: border-box; border-radius: 2px; text-decoration: none;
+  }
+  .btn-delete{
+    width: 143.5px; height: 48px; background: #FFFFFF; border: 1px solid #FA2C5A; box-sizing: border-box; border-radius: 2px; text-decoration: none; color: #FA2C5A;
+  }
+  .btn-edit{
+    padding: 8px 12px; width: 143.5px; height: 48px; background: #5CB85F; border-radius: 2px; text-decoration: none; color: #FFFFFF;
+  }
 </style>
-<main class="col" style="height: 1000px;">
+<main class="col">
   <div class="row">
     <div class="col-2">
       <div class="d-block my-2">
@@ -27,36 +41,57 @@
         <img class="mx-1" src="../../public/icons/fi_next.png" alt="">
         <span class="font-source" style="font-weight: 300; color: #222222;">List Car</span>
       </div>
-      <div class="d-block mb-3">
+      <div class="d-block mb-3 position-relative">
         <span class="font-title">List Car</span>
+        <a href="/cars/add" class="position-absolute top-0 end-0 btn-add-car font-sidebar" style="color: #FFFFFF;">
+          <img class="mx-1" src="../../public/icons/fi_plus.png" alt="">
+          Add New Car
+        </a>
       </div>
       <div>
-        <table id="example" class="display" style="width:100%;">
-          <thead>
-              <tr style="height:44px; background: #CFD4ED;">
-                  <th class="col-1 text-center font-sidebar">No</th>
-                  <th class="col-2 font-sidebar">User Email</th>
-                  <th class="col-2 font-sidebar">Car</th>
-                  <th class="col-2 font-sidebar">Start Rent</th>
-                  <th class="col-2 font-sidebar">Finish Rent</th>
-                  <th class="col-2 font-sidebar">Price</th>
-                  <th class="col-1 font-sidebar">Status</th>
-              </tr>
-          </thead>
-          <tbody>
-            <% for(var i=0; i<10; i++) {%>
-              <tr style="height:44px; background: #FFFFFF;;">
-                <td class="text-center font-sidebar" style="font-weight: 300;"><%= [i+1] %></td>
-                <td class="font-sidebar" style="font-weight: 300;">User Email</td>
-                <td class="font-sidebar" style="font-weight: 300;">Car</td>
-                <td class="font-sidebar" style="font-weight: 300;">Start Rent</td>
-                <td class="font-sidebar" style="font-weight: 300;">Finish Rent</td>
-                <td class="font-sidebar" style="font-weight: 300;">Price</td>
-                <td class="font-sidebar" style="font-weight: 300;">Status</td>
-              </tr>
-            <% } %>
-          </tbody>
-        </table>
+        <a href="" class="btn-category-all p-2 font-sidebar" style="color: #0D28A6;">
+          All
+        </a>
+        <a href="" class="btn-category p-2 font-sidebar mx-3" style="color: #AEB7E1;">
+          Small
+        </a>
+        <a href="" class="btn-category p-2 font-sidebar" style="color: #AEB7E1;">
+          Medium
+        </a>
+        <a href="" class="btn-category p-2 font-sidebar mx-3" style="color: #AEB7E1;">
+          Large
+        </a>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+        <% cars.forEach(car => { %>
+          <div class="col" >
+              <div class="card" style="border-radius: 8px;">
+                  <img src="<%= car.image %>" class="center m-4 mt-5" style="width: 80%; height: 80%;">
+                  <div class="card-body">
+                      <span class="d-block font-sidebar mb-2" style="font-weight: 400;"><%= car.nama %></span>
+                      <span class="d-block font-sidebar mb-2" style="font-size: 16px; line-height: 24px;"><%= car.harga %></span>
+                      <span class="d-block font-sidebar mb-2" style="font-weight: 300;">
+                        <img src="../../public/icons/fi_key.png" alt="">
+                        <%= car.start %> - <%= car.finish %>
+                      </span>
+                      <span class="d-block font-sidebar mb-4" style="font-weight: 300;">
+                        <img src="../../public/icons/fi_clock.png" alt="">
+                        Updated at <%= car.updated_at %>
+                      </span>
+                      <div class="row">
+                        <a href="/cars/delete" class="col-6 btn-delete text-center pt-2 font-sidebar">
+                          <img class="mb-1" src="../../public/icons/fi_trash-2.png" alt="">
+                          Delete
+                        </a>
+                        <a href="/cars/edit" class="col-6 btn-edit text-center pt-2 font-sidebar mx-2">
+                          <img class="mb-1" src="../../public/icons/fi_edit.png" alt="">
+                          Edit
+                        </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        <% }) %>
       </div>
     </div>
   </div>

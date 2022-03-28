@@ -11,7 +11,7 @@
   }
 
 </style>
-<main class="col" style="height: 1000px;">
+<main class="col">
   <div class="row">
     <div class="col-2">
       <div class="d-block my-2">
@@ -38,13 +38,31 @@
         <table id="example" class="display" style="width:100%;">
           <thead>
               <tr style="height:44px; background: #CFD4ED;">
-                  <th class="col-1 text-center font-sidebar">No</th>
-                  <th class="col-2 font-sidebar">User Email</th>
-                  <th class="col-2 font-sidebar">Car</th>
-                  <th class="col-2 font-sidebar">Start Rent</th>
-                  <th class="col-2 font-sidebar">Finish Rent</th>
-                  <th class="col-2 font-sidebar">Price</th>
-                  <th class="col-1 font-sidebar">Status</th>
+                  <th class="col-1 text-center font-sidebar" style="width: 40px;">No</th>
+                  <th class="col-2 font-sidebar">
+                    User Email            
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col-2 font-sidebar">
+                    Car
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col-2 font-sidebar">
+                    Start Rent
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col-2 font-sidebar">
+                    Finish Rent
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col-2 font-sidebar">
+                    Price
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Status
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
               </tr>
           </thead>
           <tbody>
@@ -57,6 +75,61 @@
                 <td class="font-sidebar" style="font-weight: 300;">Finish Rent</td>
                 <td class="font-sidebar" style="font-weight: 300;">Price</td>
                 <td class="font-sidebar" style="font-weight: 300;">Status</td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-block mt-5 mb-2">
+        <img class="mx-1" src="../../public/list.png" alt="">
+        <span class="font-sidebar">List Car</span>
+      </div>
+      <div>
+        <table id="example" class="display" style="width:100%;">
+          <thead>
+              <tr style="height:44px; background: #CFD4ED;">
+                  <th class="col-1 text-center font-sidebar" style="width: 40px;">No</th>
+                  <th class="col font-sidebar">
+                    Name           
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Category
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Price
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Start Rent
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Finish Rent
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Created at
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+                  <th class="col font-sidebar">
+                    Updated at
+                    <img src="../../public/icons/fi_sort.png" alt="logo">
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+            <% for(var i=0; i<10; i++) {%>
+              <tr style="height:44px; background: #FFFFFF;;">
+                <td class="text-center font-sidebar" style="font-weight: 300;"><%= [i+1] %></td>
+                <td class="font-sidebar" style="font-weight: 300;">Name</td>
+                <td class="font-sidebar" style="font-weight: 300;">Category</td>
+                <td class="font-sidebar" style="font-weight: 300;">Price</td>
+                <td class="font-sidebar" style="font-weight: 300;">Start Rent</td>
+                <td class="font-sidebar" style="font-weight: 300;">Finish Rent</td>
+                <td class="font-sidebar" style="font-weight: 300;">Created at</td>
+                <td class="font-sidebar" style="font-weight: 300;">Updated at</td>
               </tr>
             <% } %>
           </tbody>

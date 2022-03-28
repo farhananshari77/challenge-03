@@ -1,0 +1,83 @@
+[
+    {
+        "id" : 1,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 2,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 3,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 4,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 5,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 6,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 7,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 8,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    },
+    {
+        "id" : 9,
+        "nama" : "Nama/Tipe Mobil",
+        "harga" : "Rp 430.000 / hari",
+        "start": "Start rent",
+        "finish": "Finish rent",
+        "updated_at" : "4 Apr 2022, 09.00",
+        "image" : "../public/car.PNG"
+    }
+]
