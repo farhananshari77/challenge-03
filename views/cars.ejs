@@ -79,11 +79,11 @@
                         Updated at <%= car.updated_at %>
                       </span>
                       <div class="row">
-                        <a href="/cars/delete" class="col-6 btn-delete text-center pt-2 font-sidebar">
+                        <button type="button" class="col-6 btn-delete text-center pt-1 font-sidebar" data-bs-toggle="modal" data-bs-target="#carModal">
                           <img class="mb-1" src="../../public/icons/fi_trash-2.png" alt="">
                           Delete
-                        </a>
-                        <a href="/cars/edit" class="col-6 btn-edit text-center pt-2 font-sidebar mx-2">
+                        </button>
+                        <a href="/cars/edit" class="col-6 btn-edit text-center pt-3 font-sidebar mx-2">
                           <img class="mb-1" src="../../public/icons/fi_edit.png" alt="">
                           Edit
                         </a>
@@ -92,6 +92,30 @@
               </div>
           </div>
         <% }) %>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body d-flex justify-content-center">
+              <img class="mb-1 center" src="../../public/img-BeepBeep.png" alt="">              
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+              <span class="d-block font-sidebar mb-2" style="font-size: 16px; line-height: 24px;">
+                Menghapus Data Mobil
+              </span>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+              <span class="font-source" style="font-weight: 300;">
+                Setelah dihapus, data mobil tidak dapat dikembalikan Yakin ingin menghapus?
+              </span>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ya</button>
+              <button type="button" class="btn btn-primary" style="background: #FFFFFF; color: blue;" data-bs-dismiss="modal">Tidak</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
